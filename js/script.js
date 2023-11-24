@@ -134,12 +134,13 @@ document.addEventListener('keydown', (e)=>{
 // const modalTimerId = setTimeout(openModal, 5000)
 
 // Модалка вмикається, коли користувач доскролив до кінця сторінки
-function showModalByScroll(){
-    if(window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1){
-        openModal()
-        window.removeEventListener('scroll', showModalByScroll)
-    }
-}
+// function showModalByScroll(){
+//     if(window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
+        
+//         window.removeEventListener('scroll', showModalByScroll)
+//         openModal()
+//     }
+// }
 window.addEventListener('scroll', showModalByScroll)
 
 
@@ -236,6 +237,8 @@ class MenuCard {
         '.menu .container',
         'menu__item'
     ).render()
+
+    // 111
 
 
 
